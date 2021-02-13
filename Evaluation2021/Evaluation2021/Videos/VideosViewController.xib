@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideosViewController" customModule="Evaluation2021" customModuleProvider="target">
+            <connections>
+                <outlet property="likedButton" destination="ErM-Q7-vWJ" id="83A-RZ-qdl"/>
+                <outlet property="nameLabel" destination="8FB-de-TJZ" id="Kc4-Oy-oQF"/>
+                <outlet property="videoView" destination="9of-Nt-dCk" id="se8-uI-LKt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FB-de-TJZ">
+                    <rect key="frame" x="76" y="122" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4o-yC-VQk">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgu-za-B61">
+                            <rect key="frame" x="20" y="13" width="24" height="24"/>
+                            <state key="normal" image="arrow back"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="ESi-RT-lyZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Xgu-za-B61" firstAttribute="leading" secondItem="J4o-yC-VQk" secondAttribute="leading" constant="20" id="0hy-7A-3pA"/>
+                        <constraint firstAttribute="height" constant="50" id="7KW-jq-41U"/>
+                        <constraint firstItem="Xgu-za-B61" firstAttribute="centerY" secondItem="J4o-yC-VQk" secondAttribute="centerY" id="oqo-Pn-vAq"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="PsH-90-ZgG">
+                    <rect key="frame" x="20" y="114" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="2Cb-Ya-wsg"/>
+                        <constraint firstAttribute="height" constant="36" id="9cz-DD-5gI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErM-Q7-vWJ">
+                    <rect key="frame" x="364" y="117" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8LI-F7-xbw"/>
+                        <constraint firstAttribute="width" constant="30" id="DjA-sA-xBy"/>
+                    </constraints>
+                    <state key="normal" image="Path"/>
+                    <connections>
+                        <action selector="likedImageTapped:" destination="-1" eventType="touchUpInside" id="7gG-Ta-6U6"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9of-Nt-dCk">
+                    <rect key="frame" x="0.0" y="242.5" width="414" height="519.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9of-Nt-dCk" secondAttribute="trailing" id="1mm-Hy-QDW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9of-Nt-dCk" secondAttribute="bottom" constant="100" id="EOC-c6-LlP"/>
+                <constraint firstItem="J4o-yC-VQk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GVu-vn-Pqy"/>
+                <constraint firstItem="J4o-yC-VQk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I2S-W4-F4f"/>
+                <constraint firstItem="8FB-de-TJZ" firstAttribute="centerY" secondItem="PsH-90-ZgG" secondAttribute="centerY" id="J1l-ne-WZ1"/>
+                <constraint firstItem="8FB-de-TJZ" firstAttribute="leading" secondItem="PsH-90-ZgG" secondAttribute="trailing" constant="20" id="QBK-Nr-aAa"/>
+                <constraint firstItem="PsH-90-ZgG" firstAttribute="top" secondItem="J4o-yC-VQk" secondAttribute="bottom" constant="20" id="Yy6-Sc-3Wo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ErM-Q7-vWJ" secondAttribute="trailing" constant="20" id="eqR-Hm-ets"/>
+                <constraint firstItem="9of-Nt-dCk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hOs-bR-YyM"/>
+                <constraint firstItem="ErM-Q7-vWJ" firstAttribute="centerY" secondItem="PsH-90-ZgG" secondAttribute="centerY" id="jBe-th-foZ"/>
+                <constraint firstItem="9of-Nt-dCk" firstAttribute="top" secondItem="8FB-de-TJZ" secondAttribute="bottom" constant="100" id="rXN-Fo-sYe"/>
+                <constraint firstItem="PsH-90-ZgG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="re8-Ds-FM3"/>
+                <constraint firstItem="J4o-yC-VQk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rpJ-Rq-fEG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Oval" width="36" height="36"/>
+        <image name="Path" width="24" height="22"/>
+        <image name="arrow back" width="24" height="24"/>
+    </resources>
+</document>

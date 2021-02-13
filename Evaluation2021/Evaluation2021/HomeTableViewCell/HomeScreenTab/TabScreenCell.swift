@@ -1,0 +1,18 @@
+//
+//  TabScreenCell.swift
+//  Evaluation2021
+//
+//  Created by Sowmya on 13/02/21.
+//  Copyright © 2021 Sowmya. All rights reserved.
+//
+
+import UIKit
+
+class TabScreenCell: UICollectionViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+}
